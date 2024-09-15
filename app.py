@@ -10,7 +10,7 @@ from repochat.chain import response_chain
 init_session_state()
 
 st.set_page_config(
-    page_title="RepoChat",
+    page_title="Code With Repo",
     page_icon="💻",
     initial_sidebar_state="expanded",
     menu_items={

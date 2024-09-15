@@ -2,6 +2,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains.conversation.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 
+
 from .utils import model_prompt, custom_que_prompt
 
 def response_chain(db, llm):
@@ -33,7 +34,7 @@ def response_chain(db, llm):
         verbose=True,
         combine_docs_chain_kwargs={
             'prompt': QA_CHAIN_PROMPT
-        },
+        }, 
         condense_question_prompt=question_prompt
     )
 
